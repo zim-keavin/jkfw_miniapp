@@ -1,0 +1,19 @@
+/* pages/sds/sds.wxss */
+/* page{
+  background-color: white;
+} */
+.container{
+  /* background-color: white; */
+  margin: 25rpx 25rpx 0rpx;
+  padding: 30rpx;
+  border-radius: 5rpx;
+}
+
+.radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}

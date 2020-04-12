@@ -1,0 +1,8 @@
+/* pages/userInfo/userInfo.wxss */
+switch .wx-switch-input::before,
+radio.radio::before,
+checkbox .wx-checkbox-input::before,
+radio .wx-radio-input::before,
+radio.radio::before {
+	display: none;
+}

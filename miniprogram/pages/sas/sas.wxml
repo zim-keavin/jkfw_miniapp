@@ -1,0 +1,20 @@
+<!--pages/sas/sas.wxml-->
+<view class="container">
+    <view class="square">
+      <view style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:10px;">
+        <text>SAS被称为焦虑自评量表，是心理学上的专业名词，是一种焦虑评定的标准，用于测量焦虑状态轻重程度及其在治疗过程中变化情况的心理量表。主要用于疗效评估，不能用于诊断。</text>
+      </view>
+    </view>
+    <view class="square" wx:for="{{answerslist}}" wx:key="index" data-index="{{index}}">
+      <view class="input" style="padding-bottom:20px">
+        <text>{{index+1}}.{{item.title}}</text>
+      </view>
+      <radio-group id="{{index}}" bindchange="selectAnswer" style="padding-top:10px">
+        <radio class="radio_one blue" value='{{item.valueA}}'><text decode="true">&nbsp;&nbsp;&nbsp;A.{{item.answerA}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueB}}'><text decode="true">&nbsp;&nbsp;&nbsp;B.{{item.answerB}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueC}}'><text decode="true">&nbsp;&nbsp;&nbsp;C.{{item.answerC}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueD}}'><text decode="true">&nbsp;&nbsp;&nbsp;D.{{item.answerD}}</text></radio>
+      </radio-group>
+    </view>
+  <button class="btn cu-btn round lg bg-blue" catchtap='submit' style="margin-left:170rpx">提交</button>
+</view>

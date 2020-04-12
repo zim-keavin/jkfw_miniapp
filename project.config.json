@@ -9,11 +9,12 @@
 		"newFeature": true,
 		"enhance": true
 	},
-	"appid": "wxe7b27c291e10fc7f",
+	"appid": "wxa9e3a525e86abf72",
 	"projectname": "jkfw_miniapp",
-	"libVersion": "2.8.1",
+	"libVersion": "2.10.4",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -47,6 +48,27 @@
 					"id": -1,
 					"name": "pages/user/user",
 					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sas/sas",
+					"pathName": "pages/sas/sas",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sds/sds",
+					"pathName": "pages/sds/sds",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userInfo/userInfo",
+					"pathName": "pages/userInfo/userInfo",
 					"scene": null
 				}
 			]

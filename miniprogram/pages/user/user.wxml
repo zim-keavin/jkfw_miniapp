@@ -1,23 +1,39 @@
 <!--pages/user/user.wxml-->
+<!-- 背板、头像、名字 -->
 <view>
   <image class='userinfo' src="../../images/4.jpg"></image>
-  <view class='userinfo-avatar'>
-    <open-data type="userAvatarUrl" lang="zh_CN"></open-data>
+  <view class="container">
+    <view class='userinfo-avatar'>
+      <open-data type="userAvatarUrl" lang="zh_CN"></open-data>
+    </view>
+    <button class="cu-btn round sm bg-green" style="width:180rpx;height:60rpx;font-size:28rpx;margin-top:30rpx;" wx:if="{{!isRegister}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">点击注册</button>
+    <view class='userinfo-nickname' wx:else>
+      <open-data type=" userNickName " lang="zh_CN "></open-data>
+    </view>
   </view>
-  <view class='userinfo-nickname'>先生先生</view>
 </view>
-<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
-  <view class="cu-item arrow">
-    <view class="content">
-      <text class="cuIcon-profile text-grey"></text>
-      <text class="text-grey">个人信息</text>
+<!-- 个人信息等 -->
+<view class="cu-list menu {{menuBorder? 'sm-border': ''}} {{menuCard? 'card-menu margin-top': ''}} ">
+  <view class="cu-item arrow " data-name="userInfo" bindtap="navigate">
+    <view class="content ">
+      <text class="cuIcon-profile text-grey "></text>
+      <text class="text-grey ">个人信息</text>
     </view>
   </view>
-  <view class="cu-item arrow">
-    <view class="content">
-      <!-- <image src="../../images/home1.png" class="png" mode="aspectFit"></image> -->
-      <text class="cuIcon-text text-grey"></text>
-      <text class="text-grey">健康档案管理</text>
+  <view class="cu-item arrow ">
+    <view class="content ">
+      <!-- <image src="../../images/home1.png " class="png " mode="aspectFit "></image> -->
+      <text class="cuIcon-text text-grey "></text>
+      <text class="text-grey ">健康档案管理</text>
     </view>
+  </view>
+  <view class="cu-item arrow ">
+    <button open-type="contact " class='content' hover-class='none' style="font-weight:400 ">
+      <view class="content ">
+        <!-- <image src="../../images/home1.png " class="png " mode="aspectFit "></image> -->
+        <text class="cuIcon-mobile text-grey "></text>
+        <text class="text-grey ">联系客服</text>
+      </view>
+    </button>
   </view>
 </view>

@@ -1,0 +1,12 @@
+<!--pages/sds/sds.wxml-->
+<view class="container">
+  <text>哈哈哈哈啊实打实的哇撒注销吃哦萨芬安东未取得</text>
+  <view>
+    <radio style="width:40rpx;">
+      <text>sadsadasd</text>
+    </radio>
+  </view>
+
+  <radio class="red margin-left-sm">撒大声地</radio>
+</view>
+<button class="btn cu-btn round lg bg-blue" catchtap='submit' style="margin-left:50rpx">提交</button>

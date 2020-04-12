@@ -2,7 +2,12 @@
   "pages": [
     "pages/index/index",
     "pages/count/count",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/sas/sas",
+    "pages/sds/sds",
+    "pages/sad/sad",
+    "pages/heart/heart",
+    "pages/userInfo/userInfo"
    
   ],
   "window": {

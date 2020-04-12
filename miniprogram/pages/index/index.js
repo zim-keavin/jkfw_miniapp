@@ -19,5 +19,14 @@ Page({
   onLoad: function() {
    
   },
-
+  
+  /**
+   * 跳转页面
+   */
+  navigate(e){
+    const name = e.currentTarget.dataset.name;
+    wx.navigateTo({
+      url: '../'+name+'/'+name,
+    })
+  }
 })

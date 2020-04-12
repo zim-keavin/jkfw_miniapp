@@ -189,8 +189,8 @@ switch.checked::before {
 switch[checked]::before {
 	transform: scale(0, 0);
 }
-
-radio::before,
+/*-----这-----*/
+/* radio::before,
 checkbox::before {
 	font-family: "cuIcon";
 	content: "\e645";
@@ -205,7 +205,7 @@ checkbox::before {
 	transform: scale(1, 1);
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 9;
-}
+} */
 
 radio .wx-radio-input,
 checkbox .wx-checkbox-input {
@@ -262,16 +262,16 @@ switch.radius .wx-switch-input,
 switch.radius .wx-switch-input::before {
 	border-radius: 10rpx;
 }
-
-switch .wx-switch-input::before,
+/*-----这-----*/
+/* switch .wx-switch-input::before,
 radio.radio::before,
 checkbox .wx-checkbox-input::before,
 radio .wx-radio-input::before,
 radio.radio::before {
 	display: none;
-}
-
-radio.radio[checked]::after {
+} */
+/*-----这-----*/
+/* radio.radio[checked]::after {
 	content: "";
 	background-color: transparent;
 	display: block;
@@ -286,7 +286,7 @@ radio.radio[checked]::after {
 	margin: auto;
 	border-radius: 200rpx;
 	border: 8px solid var(--white) !important;
-}
+} */
 
 .switch-sex::after {
 	content: "\e71c";
@@ -297,8 +297,8 @@ radio.radio[checked]::after {
 }
 
 .switch-sex .wx-switch-input {
-	background: var(--red) !important;
-	border-color: var(--red) !important;
+	background: var(--pink) !important;
+	border-color: var(--pink) !important;
 }
 
 .switch-sex[checked] .wx-switch-input {
