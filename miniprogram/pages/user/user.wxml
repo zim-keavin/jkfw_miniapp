@@ -8,7 +8,7 @@
     </view>
     <button class="cu-btn round sm bg-green" style="width:180rpx;height:60rpx;font-size:28rpx;margin-top:30rpx;" wx:if="{{!isRegister}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">点击注册</button>
     <view class='userinfo-nickname' wx:else>
-      <open-data type=" userNickName " lang="zh_CN "></open-data>
+      <open-data type="userNickName" lang="zh_CN"></open-data>
     </view>
   </view>
 </view>

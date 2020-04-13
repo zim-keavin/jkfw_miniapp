@@ -64,7 +64,7 @@ App({
         if (res.data.length != 0) {
           console.log('[数据库] [查询user表] 用户已认证: ', res);
           this.globalData.isRegister = true;
-          this.globalData.userInfomation = res.data[0];
+          this.globalData.userInfo = res.data[0];
         } else {
           console.log('[数据库] [查询user表] 用户未注册')
           this.globalData.isRegister = false;

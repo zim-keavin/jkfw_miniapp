@@ -1,32 +1,39 @@
 <!--pages/userInfo/userInfo.wxml-->
-<form>
-  <view class="cu-form-group margin-top">
-    <view class="title">性别</view>
-    <switch class="switch-sex" checked></switch>
-  </view>
-  <view class="cu-form-group">
-    <view class="title" style="width:150rpx">身高</view>
-    <input placeholder="请输入您的身高" type="number" style="text-align:right"></input>
-  </view>
-  <view class="cu-form-group">
-    <view class="title" style="width:150rpx">年龄</view>
-    <input placeholder="请输入您的年龄" type="number" style="text-align:right"></input>
-  </view>
-  <view class="cu-form-group">
-    <view class="title" style="width:150rpx">体重</view>
-    <input placeholder="请输入您的体重" type="number" style="text-align:right"></input>
-  </view>
-  <view class="cu-form-group">
-    <view class="title" style="width:150rpx">手机号码</view>
-    <input placeholder="请输入您的手机号码" type="number" style="text-align:right"></input>
-    <view class="cu-capsule radius">
-      <view class="cu-tag bg-blue">
-        +86
+<form bindsubmit='checkInfo'>
+  <view style=" display: flex;flex-direction: column;align-items: center;">
+    <view>
+      <view class="cu-form-group margin-top">
+        <view class="title">性别</view>
+        <switch class="switch-sex" name="sex" checked="{{sex}}"></switch>
       </view>
-      <view class="cu-tag line-blue">
-        中国大陆
+      <view class="cu-form-group">
+        <view class="title" style="width:150rpx">身高</view>
+        <input placeholder="请输入您的身高" type="number" style="text-align:right" name="height" maxlength="3" value="{{height}}"></input>
+        <text>cm</text>
+      </view>
+      <view class="cu-form-group">
+        <view class="title" style="width:150rpx">年龄</view>
+        <input placeholder="请输入您的年龄" type="number" style="text-align:right" name="age" maxlength="3" value="{{age}}"></input>
+        <text decode="true">&nbsp;岁</text>
+      </view>
+      <view class="cu-form-group">
+        <view class="title" style="width:150rpx">体重</view>
+        <input placeholder="请输入您的体重" type="digit" style="text-align:right" name="weight" maxlength="3" value="{{weight}}"></input>
+        <text decode="true">&nbsp;kg</text>
+      </view>
+      <view class="cu-form-group">
+        <view class="title" style="width:150rpx">手机号码</view>
+        <input placeholder="请输入您的手机号码" type="number" style="text-align:right" name="phone" value="{{phone}}"></input>
+        <view class="cu-capsule radius">
+          <view class="cu-tag bg-blue">
+            +86
+          </view>
+          <view class="cu-tag line-blue">
+            中国大陆
+          </view>
+        </view>
       </view>
     </view>
+    <button class="btn cu-btn round lg bg-blue" style="margin-top:80rpx;" form-type='submit'>提交</button>
   </view>
-  <button class="btn cu-btn round lg bg-blue" catchtap='submit' style="margin:80rpx 170rpx 0rpx">提交</button>
 </form>

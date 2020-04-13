@@ -9,4 +9,5 @@
 
   <radio class="red margin-left-sm">撒大声地</radio>
 </view>
-<button class="btn cu-btn round lg bg-blue" catchtap='submit' style="margin-left:50rpx">提交</button>
+
+      <open-data type="userNickName" lang="zh_CN "></open-data>
