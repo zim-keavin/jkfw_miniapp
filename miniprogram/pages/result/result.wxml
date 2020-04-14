@@ -1,0 +1,12 @@
+<!--pages/result/result.wxml-->
+<view class="container solid-bottom">
+  <view style="font-size:40rpx;">您的得分：
+    <text class="{{pointColor}}">{{point}}</text>
+  </view>
+  <view style="font-size:40rpx;margin-top:20rpx;">您的症状：
+    <text class="{{statusColor}}">{{status}}</text>
+  </view>
+</view>
+<view class="textContainer">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;焦虑SAS评测评分标准：正向计分题A、B、C、D按1、2、3、4分计；反向计分题（题目题号：5、9、13、17、19）按4、3、2、1计分。总分乘以1.25取整数，即得标准分。低于50分者为正常；50-60分者为轻度焦虑；61-70分者为中度焦虑，70分以上者为重度焦虑。</text>
+</view>

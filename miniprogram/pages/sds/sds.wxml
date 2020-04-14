@@ -1,13 +1,20 @@
-<!--pages/sds/sds.wxml-->
+<!--pages/sas/sas.wxml-->
 <view class="container">
-  <text>哈哈哈哈啊实打实的哇撒注销吃哦萨芬安东未取得</text>
-  <view>
-    <radio style="width:40rpx;">
-      <text>sadsadasd</text>
-    </radio>
-  </view>
-
-  <radio class="red margin-left-sm">撒大声地</radio>
+    <view class="square">
+      <view style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:10px;">
+        <text>抑郁自评量表（Self-rating depression scale，SDS），是含有20个项目，分为4级评分的自评量表。其特点是使用简便，并能相当直观地反映抑郁患者的主观感受及其在治疗中的变化。主要适用于具有抑郁症状的成年人，包括门诊及住院患者。只是对严重迟缓症状的抑郁，评定有困难。</text>
+      </view>
+    </view>
+    <view class="square" wx:for="{{answersList}}" wx:key="index" data-index="{{index}}">
+      <view class="input" style="padding-bottom:20px">
+        <text>{{index+1}}.{{item.title}}</text>
+      </view>
+      <radio-group id="{{index}}" bindchange="selectAnswer" style="padding-top:10px">
+        <radio class="radio_one blue" value='{{item.valueA}}'><text decode="true">&nbsp;&nbsp;&nbsp;A.{{item.answerA}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueB}}'><text decode="true">&nbsp;&nbsp;&nbsp;B.{{item.answerB}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueC}}'><text decode="true">&nbsp;&nbsp;&nbsp;C.{{item.answerC}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueD}}'><text decode="true">&nbsp;&nbsp;&nbsp;D.{{item.answerD}}</text></radio>
+      </radio-group>
+    </view>
+  <button class="btn cu-btn round lg bg-blue" bindtap='submit' style="margin-left:170rpx">提交</button>
 </view>
-
-      <open-data type="userNickName" lang="zh_CN "></open-data>
