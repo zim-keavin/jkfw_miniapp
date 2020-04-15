@@ -29,10 +29,10 @@
         <text>社交回避评测</text>
       </view>
     </view>
-    <view class='re_item02' id="4" bindtap='navigate' data-name="heart">
-      <view>
-        <view>心脏功能评测</view>
-        <text>分值越低，心脏功能越佳</text>
+    <view class='re_item02' id="4" bindtap='navigate' data-name="respect">
+      <view style="margin-left:20rpx">
+        <view>自尊量评测</view>
+        <text>分值越高，自尊量越高</text>
       </view>
       <view class='ac_2'></view>
     </view>

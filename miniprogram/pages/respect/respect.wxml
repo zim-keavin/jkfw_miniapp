@@ -1,9 +1,8 @@
-<!--pages/sad/sad.wxml-->
-<!--pages/sas/sas.wxml-->
+<!--pages/respect/respect.wxml-->
 <view class="container">
     <view class="square">
       <view style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:10px;">
-        <text>社交回避及苦恼量表(SAD),社交回避及苦恼量分别指回避社会交往的倾向及身临其境时的苦恼感受。回避是一种行为表现，苦恼则为情感反应。可以测试人是否有社交回避及苦恼问题。</text>
+        <text>自尊量表(self-esteem scale，SES)是由Rosenberg于1965年编制的最初用以评定青少年关于自我价值和自我接纳的总体感受的量表，是我国心理学界使用最多的自尊测量工具。</text>
       </view>
     </view>
     <view class="square" wx:for="{{answersList}}" wx:key="index" data-index="{{index}}">
@@ -13,6 +12,8 @@
       <radio-group id="{{index}}" bindchange="selectAnswer" style="padding-top:10px">
         <radio class="radio_one blue" value='{{item.valueA}}'><text decode="true">&nbsp;&nbsp;&nbsp;A.{{item.answerA}}</text></radio>
         <radio class="radio_one blue" value='{{item.valueB}}'><text decode="true">&nbsp;&nbsp;&nbsp;B.{{item.answerB}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueC}}'><text decode="true">&nbsp;&nbsp;&nbsp;C.{{item.answerC}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueD}}'><text decode="true">&nbsp;&nbsp;&nbsp;D.{{item.answerD}}</text></radio>
       </radio-group>
     </view>
   <button class="btn cu-btn round lg bg-blue" bindtap='submit' style="margin-left:170rpx">提交</button>

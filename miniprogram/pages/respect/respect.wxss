@@ -1,5 +1,4 @@
-/* pages/sad/sad.wxss */
-/* pages/sas/sas.wxss */
+/* pages/respect/respect.wxss */
 page {
   background-color: #eaf3fb;
 }
@@ -66,5 +65,3 @@ page {
   padding-top: 10px;
   padding-bottom: 10px
 }
-
-

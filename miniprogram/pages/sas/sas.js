@@ -261,7 +261,6 @@ Page({
   selectAnswer(e) {
     let index = e.currentTarget.id;
     this.data.answersList[index].result = Number(e.detail.value);
-    console.log(this.data.answersList[index].result)
   },
 
   submit() {
