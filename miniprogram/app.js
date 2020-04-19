@@ -56,6 +56,7 @@ App({
    * 查询用户是否注册了,有则返回用户注册信息
    */
   loginConfirm: function() {
+    console.log("调用了")
     const db = wx.cloud.database()
     db.collection('user').where({
       _openid: this.globalData.openid
@@ -65,9 +66,22 @@ App({
           console.log('[数据库] [查询user表] 用户已认证: ', res);
           this.globalData.isRegister = true;
           this.globalData.userInfo = res.data[0];
+          this.globalData.bmi = Math.trunc(res.data[0].weight / Math.pow(res.data[0].height / 100, 2));
         } else {
           console.log('[数据库] [查询user表] 用户未注册')
           this.globalData.isRegister = false;
+          wx.showModal({
+            title: '提示',
+            content: '请先提交注册！',
+            showCancel:false,
+            success(res) {
+              if (res.confirm) {
+                wx.redirectTo({
+                  url: '../userInfo/userInfo',
+                })
+              }
+            }
+          })
         }
       },
       fail: err => {

@@ -6,10 +6,11 @@
     "pages/sas/sas",
     "pages/sds/sds",
     "pages/sad/sad",
-    "pages/respect/respect",
+    "pages/ses/ses",
     "pages/userInfo/userInfo",
-    "pages/result/result"
-   
+    "pages/result/result",
+    "pages/article/article",
+    "pages/articleList/articleList"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -1,4 +1,5 @@
 // pages/result/result.js
+const app = getApp();
 Page({
 
   /**
@@ -17,9 +18,8 @@ Page({
    */
   onLoad: function(options) {
     console.log(options.name)
-    if (options.name == "sas") {
+    if (options.name == "sas") { //sas评测
       let point = options.point;
-      point = point * 1.25;
       let status = '';
       let pointColor = '';
       let statusColor = '';
@@ -49,9 +49,8 @@ Page({
         standard: standard,
       })
     }
-    if (options.name == "sds") {
+    if (options.name == "sds") { //sds评测
       let point = options.point;
-      point = point * 1.25;
       let status = '';
       let pointColor = '';
       let statusColor = '';
@@ -81,7 +80,7 @@ Page({
         standard: standard,
       })
     }
-    if (options.name == "sad") {
+    if (options.name == "sad") { //sad评测
       let point = options.point;
       let status = '';
       let pointColor = '';
@@ -108,12 +107,12 @@ Page({
         standard: standard,
       })
     }
-    if (options.name == "ses") {
+    if (options.name == "ses") { //ses评测
       let point = options.point;
       let status = '';
       let pointColor = '';
       let statusColor = '';
-      if (point >= 10&&point<20) {
+      if (point >= 10 && point < 20) {
         status = "较低";
         pointColor = "text-yellow";
         statusColor = "text-yellow";
@@ -135,55 +134,8 @@ Page({
         standard: standard,
       })
     }
-
+    app.loginConfirm();  //更新全局信息
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
-  }
 })

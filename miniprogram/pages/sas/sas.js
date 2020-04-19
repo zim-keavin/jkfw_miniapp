@@ -1,6 +1,7 @@
 // pages/sas/sas.js
+const app = getApp();
+const db = wx.cloud.database();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -277,8 +278,19 @@ Page({
       }
       point += answer[i].result;
     }
+    point = point * 1.25;
+    db.collection('user').where({
+      _openid: app.globalData.openid
+    }).update({
+      data: {
+        sas: point,
+      },
+      success: function(res) {
+        console.log(res.data)
+      }
+    })
     wx.navigateTo({
-      url: '../result/result?point=' + point+'&name=sas',
+      url: '../result/result?point=' + point + '&name=sas',
     })
   }
 })

@@ -25,8 +25,25 @@ Page({
    */
   navigate(e){
     const name = e.currentTarget.dataset.name;
-    wx.navigateTo({
-      url: '../'+name+'/'+name,
-    })
+    if (app.globalData.isRegister){
+      wx.navigateTo({
+        url: '../' + name + '/' + name,
+      })
+    } 
+    else{
+      wx.showModal({
+        title: '提示',
+        content: '请先提交注册！',
+        showCancel: false,
+        success(res) {
+          if (res.confirm) {
+            wx.redirectTo({
+              url: '../userInfo/userInfo',
+            })
+          }
+        }
+      })
+    }
+   
   }
 })

@@ -20,13 +20,12 @@
       <text class="text-grey ">个人信息</text>
     </view>
   </view>
-  <view class="cu-item arrow ">
+  <!-- <view class="cu-item arrow ">
     <view class="content ">
-      <!-- <image src="../../images/home1.png " class="png " mode="aspectFit "></image> -->
       <text class="cuIcon-text text-grey "></text>
       <text class="text-grey ">健康档案管理</text>
     </view>
-  </view>
+  </view> -->
   <view class="cu-item arrow ">
     <button open-type="contact " class='content' hover-class='none' style="font-weight:400 ">
       <view class="content ">

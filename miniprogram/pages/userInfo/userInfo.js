@@ -20,18 +20,20 @@ Page({
    */
   onLoad: function(options) {
     let sex = ""
-    if (app.globalData.userInfo.sex == "男") {
-      sex = true;
-    } else {
-      sex = false;
+    if (app.globalData.isRegister){  //判断是否已注册，已注册再执行
+      if (app.globalData.userInfo.sex == "男") {
+        sex = true;
+      } else {
+        sex = false;
+      }
+      this.setData({
+        age: app.globalData.userInfo.age,
+        weight: app.globalData.userInfo.weight,
+        phone: app.globalData.userInfo.phone,
+        height: app.globalData.userInfo.height,
+        sex: sex
+      })
     }
-    this.setData({
-      age: app.globalData.userInfo.age,
-      weight: app.globalData.userInfo.weight,
-      phone: app.globalData.userInfo.phone,
-      height: app.globalData.userInfo.height,
-      sex: sex
-    })
   },
 
   //提交个人信息前检查表单是否填写正确
@@ -90,7 +92,11 @@ Page({
         height: height,
         age: age,
         weight: weight,
-        phone: phone
+        phone: phone,
+        sas: 0,
+        sds: 0,
+        sad: 0,
+        ses: 0
       },
       success: res => {
         app.loginConfirm(); //修改登录状态
@@ -127,7 +133,7 @@ Page({
         height: height,
         age: age,
         weight: weight,
-        phone: phone
+        phone: phone,
       },
       success: res => {
         app.loginConfirm(); //更新信息

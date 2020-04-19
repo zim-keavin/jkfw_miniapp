@@ -1,2 +1,73 @@
 <!--pages/count/count.wxml-->
-<text>pages/count/count.wxml</text>
+<view class="title solid-bottom">
+  <view style="font-size:40rpx;">您的BMI值：
+    <text style="color:{{bmiColor}}">{{bmi}}</text>
+  </view>
+  <view style="font-size:40rpx;margin-top:20rpx;">身体状态：
+    <text style="color:{{bmiColor}}">{{status}}</text>
+  </view>
+</view>
+<view class="echart">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<view class="container solid-top">
+  <view class="detail_data">
+    <navigator url="../sleep/sleep">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon1'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>SAS评测得分</text>
+            <text>焦虑程度</text>
+          </view>
+        </view>
+        <view class='d_score {{sasColor}}' style='font-size:30rpx'>
+          <text>{{sas}}</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../heart/heart">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon2'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>SDS评测得分</text>
+            <text>抑郁程度</text>
+          </view>
+        </view>
+        <view class='d_score {{sdsColor}}' style='font-size:30rpx'>
+          <text>{{sds}}</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../health/health">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon3'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>SAD评测得分</text>
+            <text>社交回避程度</text>
+          </view>
+        </view>
+        <view class='d_score {{sadColor}}' style='font-size:30rpx'>
+          <text>{{sad}}</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../eyetest/eyetest">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon3'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>SES评测得分</text>
+            <text>自尊量</text>
+          </view>
+        </view>
+        <view class='d_score {{sesColor}}' style='font-size:30rpx'>
+          <text>{{ses}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

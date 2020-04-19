@@ -1,0 +1,22 @@
+<!--pages/articleList/articleList.wxml-->
+<!-- <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-gradual-blue shadow-blur round" size="mini" style="font-size:28rpx;font-weight:500;width:120rpx;height:60rpx;line-height:60rpx;">搜索</button>
+  </view>
+</view> -->
+
+<view class='grid-item-container'>
+  <block wx:for="{{iconStyle}}" wx:key="index">
+    <view class='grid-item-child'>
+      <view class="grid-container">
+        <image class='grid-item-icon' src="{{item.url}}"></image>
+        <text class='grid-item-label'>{{item.type}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
