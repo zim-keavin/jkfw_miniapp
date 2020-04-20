@@ -56,7 +56,6 @@ App({
    * 查询用户是否注册了,有则返回用户注册信息
    */
   loginConfirm: function() {
-    console.log("调用了")
     const db = wx.cloud.database()
     db.collection('user').where({
       _openid: this.globalData.openid

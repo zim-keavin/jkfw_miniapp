@@ -1,1 +1,7 @@
 /* pages/article/article.wxss */
+.time{
+  position: absolute;
+  right: 0rpx;
+  top: 120rpx;
+  margin-right: 50rpx;
+}

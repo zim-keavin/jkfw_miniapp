@@ -1,2 +1,9 @@
 <!--pages/article/article.wxml-->
-<text>pages/article/article.wxml</text>
+<view class='bg-white padding-xl '>
+  <view class='text-center margin-bottom text-xl  text-black'>{{list.title}}</view>
+  <view class="time text-grey text-sm">{{list.time}}</view>
+  <view style="height:20rpx;"></view>
+  <view class='text-content' wx:for="{{list.content}}" wx:key="index" style="margin-top:10rpx;text-align:justify">
+    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+  </view>
+</view>

@@ -55,7 +55,7 @@
   <view class="action">
     <text class="cuIcon-title text-orange "></text>健康知识科普
   </view>
-  <view class="action" bindtap="navigate" data-name="articleList">
+  <view class="action" bindtap="navigate" data-name="articleSort">
     <text class="text-orange">更多...</text>
   </view>
 </view>

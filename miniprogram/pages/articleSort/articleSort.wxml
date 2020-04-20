@@ -1,0 +1,12 @@
+<!--pages/articleList/articleList.wxml-->
+<view class='grid-item-container'>
+  <block wx:for="{{iconStyle}}" wx:key="index">
+    <view class='grid-item-child'>
+      <view class="grid-container" id="{{index}}" bindtap="navigate">
+        <image class='grid-item-icon' src="{{item.src}}"></image>
+        <text class='grid-item-label'>{{item.type}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+

@@ -10,7 +10,8 @@
     "pages/userInfo/userInfo",
     "pages/result/result",
     "pages/article/article",
-    "pages/articleList/articleList"
+    "pages/articleList/articleList",
+    "pages/articleSort/articleSort"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

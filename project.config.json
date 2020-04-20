@@ -97,6 +97,14 @@
 					"id": -1,
 					"name": "pages/articleList/articleList",
 					"pathName": "pages/articleList/articleList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "pages/article/article",
+					"pathName": "pages/articleList/articleList",
+					"query": "page=gxy",
 					"scene": null
 				}
 			]
