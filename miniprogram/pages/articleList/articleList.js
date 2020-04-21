@@ -4,8 +4,9 @@ const db = wx.cloud.database();
 Page({
 
   data: {
-    list: '',
-    page: '',
+    list: '', //文章数据
+    page: '', //在哪个分类中，如糖尿病
+    search: '', //搜索内容
   },
 
   /**
@@ -23,17 +24,50 @@ Page({
     })
   },
 
-/**
- * 跳转页面，传参
- */
+  /**
+   * 跳转页面，传参
+   */
   navigate(e) {
     let index = e.currentTarget.id;
     let id = this.data.list[index]._id;
     let page = this.data.page;
-    wx.navigateTo({    //传参，点了哪个页面以及云数据库的_id标识，用于定位
-      url: '../article/article?page=' + page+'&id='+id
+    wx.navigateTo({ //传参，点了哪个页面以及云数据库的_id标识，用于定位
+      url: '../article/article?page=' + page + '&id=' + id
+    })
+  },
+
+  /**
+   * 获取搜索输入框的值
+   */
+  getSearchValue(e) {
+    this.setData({
+      search: e.detail.value
+    })
+  },
+
+
+  /**
+   * 搜索
+   */
+  search() {
+    let _this = this;
+    let search = this.data.search;
+    let page = this.data.page
+    db.collection(page).where({
+      //使用正则查询，实现对搜索的模糊查询
+      title: db.RegExp({
+        regexp: search,
+        //从搜索栏中获取的value作为规则进行匹配。
+        options: 'i',
+        //大小写不区分
+      })
+    }).get({
+      success: res => {
+        console.log(res)
+        _this.setData({
+          list: res.data
+        })
+      }
     })
   }
-
-
 })

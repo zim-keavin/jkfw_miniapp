@@ -14,10 +14,10 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面加载
+   * 判断是哪个评测后，获取分数，并根据分数
+   * 设定不同颜色
    */
   onLoad: function(options) {
-    console.log(options.name)
     if (options.name == "sas") { //sas评测
       let point = options.point;
       let status = '';

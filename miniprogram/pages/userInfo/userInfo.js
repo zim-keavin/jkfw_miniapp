@@ -20,7 +20,7 @@ Page({
    */
   onLoad: function(options) {
     let sex = ""
-    if (app.globalData.isRegister){  //判断是否已注册，已注册再执行
+    if (app.globalData.isRegister) { //判断是否已注册，已注册再执行
       if (app.globalData.userInfo.sex == "男") {
         sex = true;
       } else {
@@ -36,14 +36,16 @@ Page({
     }
   },
 
-  //提交个人信息前检查表单是否填写正确
+  /**
+   * 提交个人信息前检查表单是否填写正确
+   */
   checkInfo(e) {
     let sex = e.detail.value.sex;
     let height = e.detail.value.height;
     let age = e.detail.value.age;
     let weight = e.detail.value.weight;
     let phone = e.detail.value.phone;
-    const mobile = /^[1][3,4,5,7,8][0-9]{9}$/; //验证手机号码
+    const mobile = /^[1][3,4,5,7,8][0-9]{9}$/; //验证手机号码的正则表达
     const isMobile = mobile.exec(phone);
     if (e.detail.value.sex) {
       sex = "男";
@@ -83,7 +85,7 @@ Page({
   },
 
   /**
-   * 第一次注册调用
+   * 第一次注册调用，提交用户信息到记录
    */
   submitInfo(sex, height, age, weight, phone) {
     db.collection('user').add({
@@ -122,7 +124,7 @@ Page({
   },
 
   /**
-   * 如果已经注册过，则更新数据
+   * 如果已经注册过，则更新用户表中的数据
    */
   updateInfo(sex, height, age, weight, phone) {
     db.collection('user').where({

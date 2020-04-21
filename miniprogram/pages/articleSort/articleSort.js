@@ -9,7 +9,7 @@ Page({
     iconStyle: [{
         "type": "高血压",
         "src": "../../images/gxy.png",
-        value: "gxy"
+        value: "gxy"       //用于定位数据在哪个表
       },
       {
         "type": "糖尿病",

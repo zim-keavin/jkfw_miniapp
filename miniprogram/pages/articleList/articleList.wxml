@@ -2,10 +2,10 @@
 <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;">
   <view class="search-form round">
     <text class="cuIcon-search"></text>
-    <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" bindinput='getSearchValue'></input>
   </view>
   <view class="action">
-    <button class="cu-btn bg-gradual-blue shadow-blur round" size="mini" style="font-size:28rpx;font-weight:500;width:120rpx;height:60rpx;line-height:60rpx;">搜索</button>
+    <button class="cu-btn bg-gradual-blue shadow-blur round" size="mini" style="font-size:28rpx;font-weight:500;width:120rpx;height:60rpx;line-height:60rpx;" bindtap="search">搜索</button>
   </view>
 </view>
 

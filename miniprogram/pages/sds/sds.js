@@ -265,6 +265,10 @@ Page({
     this.data.answersList[index].result = Number(e.detail.value);
   },
 
+
+  /**
+   * 计算表的值并更新到数据库中
+   */
   submit() {
     let point = 0;
     let answer = this.data.answersList;
@@ -286,7 +290,7 @@ Page({
       data: {
         sds: point,
       },
-      success: function (res) {
+      success: function(res) {
         console.log(res.data)
       }
     })

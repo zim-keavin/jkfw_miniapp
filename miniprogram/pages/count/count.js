@@ -2,6 +2,9 @@
 const app = getApp();
 import * as echarts from '../../components/ec-canvas/echarts';
 
+/**
+ * 使用了echart插件小程序版
+ */
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
     width: width,
@@ -94,7 +97,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    if (!app.globalData.isRegister) {
+    if (!app.globalData.isRegister) { //判断有没登录
       wx.showModal({
         title: '提示',
         content: '请先提交注册！',
@@ -108,7 +111,7 @@ Page({
         }
       })
       return;
-    } 
+    }
     let bmi = app.globalData.bmi;
     let bmiColor = '';
     let status = '';
@@ -136,6 +139,9 @@ Page({
     this.getPoint();
   },
 
+  /**
+   * 获取填写的评测的分数
+   */
   getPoint() {
     let sas = app.globalData.userInfo.sas;
     let sds = app.globalData.userInfo.sds;
@@ -194,7 +200,7 @@ Page({
     wx.showNavigationBarLoading() //在标题栏中显示加载
     var _this = this
     setTimeout(function() { //模拟网络加载，强化体验
-      _this.getPoint()  //刷新评测得分
+      _this.getPoint() //刷新评测得分
       wx.hideNavigationBarLoading() //完成停止加载
       wx.stopPullDownRefresh() //停止下拉刷新
     }, 1000)

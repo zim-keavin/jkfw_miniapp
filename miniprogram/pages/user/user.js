@@ -20,7 +20,10 @@ Page({
     console.log(this.data.isRegister)
   },
 
-  bindGetUserInfo: function (e) {
+  /**
+   * 用户点击注册后触发，如果同意则跳转到注册页面
+   */
+  bindGetUserInfo: function(e) {
     console.log(e)
     if (e.detail.userInfo) {
       app.globalData.userInfo = e.detail.userInfo;
@@ -32,6 +35,7 @@ Page({
       wx.showModal({
         title: '授权失败',
         content: '您拒绝了授权登录',
+        showCancel: false,
       })
     }
   },
@@ -40,10 +44,25 @@ Page({
    * 跳转页面
    */
   navigate(e) {
-    const name = e.currentTarget.dataset.name;
-    wx.navigateTo({
-      url: '../' + name + '/' + name,
-    })
+    if (app.globalData.isRegister) {
+      const name = e.currentTarget.dataset.name;
+      wx.navigateTo({
+        url: '../' + name + '/' + name,
+      })
+    } else {
+      wx.showModal({
+        title: '提示',
+        content: '请先提交注册！',
+        showCancel: false,
+        success(res) {
+          if (res.confirm) {
+            wx.redirectTo({
+              url: '../userInfo/userInfo',
+            })
+          }
+        }
+      })
+    }
   },
 
   /**
