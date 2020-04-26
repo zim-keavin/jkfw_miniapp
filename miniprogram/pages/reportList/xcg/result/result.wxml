@@ -1,0 +1,45 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>白细胞计数
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.WBC[id.wbc]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>红细胞计数
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.RBC[id.rbc]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>血红蛋白浓度
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.HB[id.hb]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>红细胞比容
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.HCT[id.hct]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>平均红细胞体积
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.MCV[id.mcv]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+<view style="height:100rpx;"></view>

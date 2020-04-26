@@ -5,14 +5,26 @@
   </swiper-item>
 </swiper>
 
-<view class="cu-bar bg-white solid-bottom margin-top">
+<!-- <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
     <text class="cuIcon-title text-blue "></text>健康评测
   </view>
+</view> -->
+<view class="container solid-bottom">
+  <view class="box solid-right" data-name="healthyList" bindtap="navigate">
+    <text>健康评测</text>
+  </view>
+  <view class="box solid-right" data-name="reportList" bindtap="navigate">
+    <text>报告解读</text>
+  </view>
+  <view class="box" data-name="healthyFiles" bindtap="navigate">
+    <text>健康档案</text>
+  </view>
 </view>
-<view class='re_bg'>
+
+<!-- <view class='re_bg'>
   <view class='re_01' style="margin-top:45rpx" id="1" bindtap='navigate' data-name="sas">
-    <!-- <image src='../image/index/tuijian.png'></image> -->
+    <image src='../image/index/tuijian.png'></image>
     <view>焦虑SAS评测</view>
     <text>分数越高 焦虑程度越高</text>
     <view class='ac_1'></view>
@@ -37,7 +49,7 @@
       <view class='ac_2'></view>
     </view>
   </view>
-</view>
+</view> -->
 
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">

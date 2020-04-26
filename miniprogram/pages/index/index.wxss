@@ -6,6 +6,23 @@ page {
   flex-direction: column;
   justify-content: flex-start;
 }
+.container{
+  background-color: white;
+  display: flex;
+}
+.box{
+  width: 33.3%;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
 
 /*推荐  */
 .re_tit{

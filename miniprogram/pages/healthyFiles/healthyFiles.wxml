@@ -1,0 +1,49 @@
+<!--pages/healthyFiles/healthyFiles.wxml-->
+<view class="cu-bar bg-blue solid-bottom light">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>家族病史（指直系亲属曾经患的疾病）
+  </view>
+</view>
+<form bindsubmit='submitForm'>
+<view class="cu-form-group">
+  <view class="title">高血压</view>
+  <picker bindchange="PickerChange" value="{{gxyFile}}" range="{{picker}}" data-name="gxyFile">
+    <view class="picker">
+      {{gxyFile?picker[gxyFile]:'请选择'}}
+    </view>
+  </picker>
+</view>
+<view class="cu-form-group">
+  <view class="title">糖尿病</view>
+  <picker bindchange="PickerChange" value="{{tnbFile}}" range="{{picker}}" data-name="tnbFile">
+    <view class="picker">
+      {{tnbFile?picker[tnbFile]:'请选择'}}
+    </view>
+  </picker>
+</view>
+<view class="cu-form-group">
+  <view class="title">中风病史</view>
+  <picker bindchange="PickerChange" value="{{zfbsFile}}" range="{{picker}}" data-name="zfbsFile">
+    <view class="picker">
+      {{zfbsFile?picker[zfbsFile]:'请选择'}}
+    </view>
+  </picker>
+</view>
+<view class="cu-form-group">
+  <view class="title">冠心病</view>
+  <picker bindchange="PickerChange" value="{{gxbFile}}" range="{{picker}}" data-name="gxbFile">
+    <view class="picker">
+      {{gxbFile?picker[gxbFile]:'请选择'}}
+    </view>
+  </picker>
+</view>
+<view class="cu-form-group">
+  <view class="title">过敏史</view>
+  <picker bindchange="PickerChange" value="{{gmsFile}}" range="{{picker}}" data-name="gmsFile">
+    <view class="picker">
+      {{gmsFile?picker[gmsFile]:'请选择'}}
+    </view>
+  </picker>
+</view>
+<button class="btn cu-btn round lg bg-blue" style="margin-top:80rpx; margin-left:180rpx" form-type='submit'>提交</button>
+</form>

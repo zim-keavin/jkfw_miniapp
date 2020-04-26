@@ -1,0 +1,46 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>便潜血FOBT
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.FOBT[id.fobt]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>白细胞WBC
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.WBC[id.wbc]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>红细胞RBC
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.RBC[id.rbc]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>虫卵Eggs
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.Eggs[id.eggs]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>脂肪滴Fatty oils
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.Fo[id.fo]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view style="height:100rpx;"></view>

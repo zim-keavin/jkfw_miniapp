@@ -1,0 +1,46 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>丙氨酸氨基转移酶ALT:
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.ALT[id.alt]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>天门冬氨酸氨基转移酶AST:
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.AST[id.ast]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>y-谷氨酰基转移酶GGT: 
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.GGT[id.ggt]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>直接胆红素Dbil: 
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.Dbil[id.dbil]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>间接胆红素IDBil: : 
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.IDBil[id.idbil]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view style="height:100rpx;"></view>

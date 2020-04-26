@@ -64,7 +64,7 @@
             <text>自尊量</text>
           </view>
         </view>
-        <view class='d_score {{sesColor}}' style='font-size:30rpx'>
+        <view class='d_score {{sesColor}}' style='font-size:30rpx;'>
           <text>{{ses}}</text>
         </view>
       </view>

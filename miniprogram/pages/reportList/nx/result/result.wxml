@@ -1,0 +1,37 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>凝血酶时间TT
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.TT[id.tt]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>凝血酶原时间PT
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.PT[id.pt]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>活化部分凝血活酶时间APTT
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.APTT[id.aptt]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>血浆纤维蛋白原FIB
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.FIB[id.fib]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view style="height:100rpx;"></view>

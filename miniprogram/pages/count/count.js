@@ -176,7 +176,7 @@ Page({
     } else if (sad >= 18) {
       sadColor = "text-red";
     }
-    if (ses >= 10 && ses < 20) {
+    if (ses >= 0 && ses < 20) {
       sesColor = "text-yellow";
     } else if (ses >= 20 && ses < 30) {
       sesColor = "text-olive";

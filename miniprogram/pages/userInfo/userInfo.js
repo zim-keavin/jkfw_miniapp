@@ -98,7 +98,12 @@ Page({
         sas: 0,
         sds: 0,
         sad: 0,
-        ses: 0
+        ses: 0,
+        gxyFile: '',
+        tnbFile: '',
+        zfbsFile: '',
+        gxbFile: '',
+        gmsFile: '',
       },
       success: res => {
         app.loginConfirm(); //修改登录状态

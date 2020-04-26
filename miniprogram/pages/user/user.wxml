@@ -27,7 +27,7 @@
     </view>
   </view> -->
   <view class="cu-item arrow ">
-    <button open-type="contact " class='content' hover-class='none' style="font-weight:400 ">
+    <button open-type="contact" class='content' hover-class='none' style="font-weight:400 ">
       <view class="content ">
         <!-- <image src="../../images/home1.png " class="png " mode="aspectFit "></image> -->
         <text class="cuIcon-mobile text-grey "></text>

@@ -1,0 +1,46 @@
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>天门冬氨酸氨基转移酶AST
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.AST[id.ast]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>肌酸激酶CK 
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.CK[id.ck]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>肌酸激酶同工酶CK-MB
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.CKMB[id.ckmb]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>乳酸脱氢酶LDH 
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.LDH[id.ldh]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text>a-羟丁酸脱氢酶a-HBDH :  
+  </view>
+</view>
+<view class='text-content' wx:for="{{list.HBDH[id.hbdh]}}" wx:key="index" style="margin:20rpx;text-align:justify">
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item}}</text>
+</view>
+
+<view style="height:100rpx;"></view>

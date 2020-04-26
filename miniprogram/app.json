@@ -11,7 +11,22 @@
     "pages/result/result",
     "pages/article/article",
     "pages/articleList/articleList",
-    "pages/articleSort/articleSort"
+    "pages/articleSort/articleSort",
+    "pages/healthyList/healthyList",
+    "pages/reportList/reportList",
+    "pages/healthyFiles/healthyFiles",
+    "pages/reportList/xcg/xcg",
+    "pages/reportList/xcg/result/result",
+    "pages/reportList/ncg/ncg",
+    "pages/reportList/ncg/result/result",
+    "pages/reportList/bcg/bcg",
+    "pages/reportList/bcg/result/result",
+    "pages/reportList/nx/nx",
+    "pages/reportList/nx/result/result",
+    "pages/reportList/ggn/ggn",
+    "pages/reportList/ggn/result/result",
+    "pages/reportList/xjm/xjm",
+    "pages/reportList/xjm/result/result"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

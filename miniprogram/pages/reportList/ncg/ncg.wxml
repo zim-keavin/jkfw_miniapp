@@ -1,0 +1,15 @@
+<!--pages/reportList/ncg/ncg.wxml-->
+<view class="container">
+    <view class="square" wx:for="{{answersList}}" wx:key="index" data-index="{{index}}">
+      <view class="input" style="padding-bottom:20px">
+        <text>{{index+1}}.{{item.title}}</text>
+      </view>
+      <radio-group id="{{index}}" bindchange="selectAnswer" style="padding-top:10px">
+        <radio class="radio_one blue" value='{{item.valueA}}'><text decode="true">&nbsp;&nbsp;&nbsp;A.{{item.answerA}}</text></radio>
+        <radio class="radio_one blue" value='{{item.valueB}}'><text decode="true">&nbsp;&nbsp;&nbsp;B.{{item.answerB}}</text></radio>
+        <radio wx:if="{{index==0}}" class="radio_one blue" value='{{item.valueC}}'><text decode="true">&nbsp;&nbsp;&nbsp;B.{{item.answerC}}</text></radio>
+      </radio-group>
+    </view>
+  <button class="btn cu-btn round lg bg-blue" bindtap='submit' style="margin-left:170rpx">提交</button>
+</view>
+

@@ -1,0 +1,16 @@
+<!--pages/healthyList/healthyList.wxml-->
+<view class='allContainer' wx:for="{{list}}" bindtap="navigate" wx:key="index" data-name="{{item.name}}">
+  <view class='containerView'>
+    <view class='containerText'>
+      <view class='title'>{{item.title}}</view>
+      <view class='content'>
+        <text class="cuIcon-post text-grey"></text>
+        <text>{{item.num}}人参与</text>
+      </view>
+    </view>
+    <image class='image' src='{{item.src}}' mode='widthFix'></image>
+  </view>
+  <view class='solidView'>
+    <view class='b'></view>
+  </view>
+</view>
