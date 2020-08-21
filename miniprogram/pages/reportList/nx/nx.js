@@ -10,6 +10,7 @@ Page({
       answerB: "缩短",
       valueB: 1,
       result: 0,
+      unit: "(16~18)秒"
     },
     {
       title: "凝血酶原时间PT",
@@ -18,6 +19,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "(11~13.7)秒"
     },
     {
       title: "活化部分凝血活酶时间APTT",
@@ -26,6 +28,7 @@ Page({
       answerB: "缩短",
       valueB: 1,
       result: 0,
+      unit: "(37土3.3)秒"
     },
     {
       title: "血浆纤维蛋白原FIB",
@@ -34,6 +37,7 @@ Page({
       answerB: "缩短",
       valueB: 1,
       result: 0,
+      unit: "2~4g/L"
     },
     ],
   },

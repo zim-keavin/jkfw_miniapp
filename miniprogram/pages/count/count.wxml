@@ -69,5 +69,61 @@
         </view>
       </view>
     </navigator>
+    <navigator url="../eyetest/eyetest">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon3'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>FES评测得分</text>
+            <text>家庭环境</text>
+          </view>
+        </view>
+        <view class='d_score text-olive' style='font-size:30rpx;'>
+          <text>0</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../eyetest/eyetest">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon3'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>EQ评测得分</text>
+            <text>情商量</text>
+          </view>
+        </view>
+        <view class='d_score text-olive' style='font-size:30rpx;'>
+          <text>0</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../eyetest/eyetest">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon3'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>EPQ评测得分</text>
+            <text>人格测试</text>
+          </view>
+        </view>
+        <view class='d_score text-olive' style='font-size:30rpx;'>
+          <text>0</text>
+        </view>
+      </view>
+    </navigator>
+     <navigator url="../eyetest/eyetest">
+      <view class="d_list">
+        <view class='d_result'>
+          <view class='d_icon3'></view>
+          <view class='d_detail'>
+            <text class='d_tit'>SCL-90评测得分</text>
+            <text>症状自评</text>
+          </view>
+        </view>
+        <view class='d_score text-olive' style='font-size:30rpx;'>
+          <text>0</text>
+        </view>
+      </view>
+    </navigator>
   </view>
 </view>

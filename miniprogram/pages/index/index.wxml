@@ -10,7 +10,7 @@
     <text class="cuIcon-title text-blue "></text>健康评测
   </view>
 </view> -->
-<view class="container solid-bottom">
+<!-- <view class="container solid-bottom">
   <view class="box solid-right" data-name="healthyList" bindtap="navigate">
     <text>健康评测</text>
   </view>
@@ -20,36 +20,28 @@
   <view class="box" data-name="healthyFiles" bindtap="navigate">
     <text>健康档案</text>
   </view>
-</view>
-
-<!-- <view class='re_bg'>
-  <view class='re_01' style="margin-top:45rpx" id="1" bindtap='navigate' data-name="sas">
-    <image src='../image/index/tuijian.png'></image>
-    <view>焦虑SAS评测</view>
-    <text>分数越高 焦虑程度越高</text>
-    <view class='ac_1'></view>
-  </view>
-
-  <view class='re_02'>
-    <view class='re_item01'>
-      <view class='items' id="2" bindtap='navigate' data-name="sds">
-        <view>SDS评测</view>
-        <text>抑郁程度评估</text>
-      </view>
-      <view class='items' id="3" bindtap='navigate' data-name="sad">
-        <view>SAD评测</view>
-        <text>社交回避评测</text>
-      </view>
-    </view>
-    <view class='re_item02' id="4" bindtap='navigate' data-name="ses">
-      <view style="margin-left:25rpx">
-        <view>SES评测</view>
-        <text>分值越高，自尊量越高</text>
-      </view>
-      <view class='ac_2'></view>
-    </view>
-  </view>
 </view> -->
+
+<view class='grid-item-container'>
+  <view class='grid-item-child solid-right' data-name="healthyList" bindtap="navigate">
+    <view class="grid-container" id="{{index}}">
+      <image class='grid-item-icon' src="../../images/pc.png" style="margin-bottom:10rpx;"></image>
+      <text class='grid-item-label'>健康评测</text>
+    </view>
+  </view>
+  <view class='grid-item-child solid-right' data-name="reportList" bindtap="navigate">
+    <view class="grid-container" id="{{index}}">
+      <image class='grid-item-icon' src="../../images/jd.png" style="margin-bottom:10rpx;"></image>
+        <text class='grid-item-label'>报告解读</text>
+      </view>
+    </view>
+    <view class='grid-item-child ' data-name="healthyFiles" bindtap="navigate">
+      <view class="grid-container " id="{{index}} " >
+        <image class='grid-item-icon' src="../../images/da.png " style="margin-bottom:10rpx;"></image>
+      <text class='grid-item-label'>健康档案</text>
+    </view>
+  </view>
+</view>
 
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">

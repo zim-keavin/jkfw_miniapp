@@ -11,7 +11,7 @@ Page({
     zfbsFile: '',
     gxbFile: '',
     gmsFile: '',
-
+    allergy:['过敏性鼻炎','过敏性皮炎','过敏性结膜炎','药物性过敏']
   },
 
   /**

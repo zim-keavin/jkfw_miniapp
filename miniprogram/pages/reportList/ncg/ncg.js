@@ -12,6 +12,7 @@ Page({
       answerC: "深绿色",
       valueC: 2,
       result: 0,
+      unit: "淡黄色"
     },
     {
       title: " 透明度CLA",
@@ -20,6 +21,7 @@ Page({
       answerB: "明显浑浊",
       valueB: 1,
       result: 0,
+      unit: "清晰透明"
     },
     {
       title: "酸碱度PH",
@@ -28,6 +30,7 @@ Page({
       answerB: "降低",
       valueB: 1,
       result: 0,
+      unit: "5.0~9.0"
     },
     {
       title: "葡萄糖GLU",
@@ -36,6 +39,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
     {
       title: "蛋白质PRO",
@@ -44,6 +48,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
       {
         title: "白细胞LEO",
@@ -52,6 +57,7 @@ Page({
         answerB: "阳性",
         valueB: 1,
         result: 0,
+        unit: "阴性（-）"
       },
       {
         title: "酮体KET",
@@ -60,6 +66,7 @@ Page({
         answerB: "阳性",
         valueB: 1,
         result: 0,
+        unit: "阴性（-）"
       }
     ],
   },

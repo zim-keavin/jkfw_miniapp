@@ -39,9 +39,9 @@
 </view>
 <view class="cu-form-group">
   <view class="title">过敏史</view>
-  <picker bindchange="PickerChange" value="{{gmsFile}}" range="{{picker}}" data-name="gmsFile">
+  <picker bindchange="PickerChange" value="{{gmsFile}}" range="{{allergy}}" data-name="gmsFile">
     <view class="picker">
-      {{gmsFile?picker[gmsFile]:'请选择'}}
+      {{gmsFile?allergy[gmsFile]:'请选择'}}
     </view>
   </picker>
 </view>

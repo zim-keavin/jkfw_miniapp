@@ -10,6 +10,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
     {
       title: "白细胞WBC",
@@ -18,6 +19,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
     {
       title: "红细胞RBC",
@@ -26,6 +28,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
     {
       title: "虫卵Eggs",
@@ -34,6 +37,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
     {
       title: "脂肪滴Fatty oils",
@@ -42,6 +46,7 @@ Page({
       answerB: "阳性",
       valueB: 1,
       result: 0,
+      unit: "阴性（-）"
     },
     ],
   },

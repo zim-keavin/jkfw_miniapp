@@ -25,7 +25,28 @@ Page({
       src: "../../images/8.jpg",
       name: "ses",
       num: 18
-    }]
+    }, {
+      title: "家庭环境量表(FES)",
+      src: "../../images/7.jpg",
+      name: "",
+      num: 9
+    }, {
+      title: "标准情商测试(EQ)",
+      src: "../../images/6.jpg",
+      name: "",
+      num: 19
+    }, {
+      title: "艾森克人格问卷(EPQ)",
+      src: "../../images/5.jpg",
+      name: "",
+      num: 12
+    },
+      {
+        title: "症状自评量表(SCL-90)",
+        src: "../../images/8.jpg",
+        name: "",
+        num: 6
+      }]
   },
 
   /**
